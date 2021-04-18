@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="15dp"
+    android:padding="@dimen/padding_regular"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/imageUrl"
+                android:layout_width="100dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="10dp"
+                android:layout_height="80dp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/nameLabel"-->
+<!--                android:text="Name: "-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_marginLeft="21dp"-->
+<!--                android:layout_toRightOf="@id/imageUrl"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+            <TextView
+                android:id="@+id/name"
+                tools:text="Afghanistan"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@id/imageUrl"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/capitalLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/name"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/imageUrl"
+                android:text="Capital:" />
+
+            <TextView
+                android:id="@+id/capital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_below="@id/name"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@id/capitalLabel"
+                tools:text="Capital" />
+
+            <TextView
+                android:id="@+id/regionLabel"
+                android:text="Region:"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/capital"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@id/imageUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/region"
+                android:text="Region"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/capital"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/regionLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/populationLabel"
+                android:text="Population:"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/region"
+                android:layout_marginLeft="21dp"
+                android:layout_toRightOf="@id/imageUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/population"
+                android:text="Population"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/region"
+                android:layout_marginLeft="4dp"
+                android:inputType="numberDecimal"
+                android:layout_toRightOf="@id/populationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
