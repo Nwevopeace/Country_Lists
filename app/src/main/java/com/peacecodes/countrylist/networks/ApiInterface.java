@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 
 public interface ApiInterface {
 
-    @GET("all?fields=name;capital;population;region;flag;nativeName;subregion;numericCode")
+    @GET("all?fields=name;capital;population;region;flag;nativeName;subregion;numericCode;currencies;timezones;callingCodes;languages;area")
     Call<List<Country>> getCountries();
 }

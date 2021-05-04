@@ -185,299 +185,299 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_areaLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_populationLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Area:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_areaLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_populationLabel"
+                    android:layout_margin="5dp"
+                    android:text="Area:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_area"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_population"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_areaLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_population"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_areaLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_currencyLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_areaLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Currencies:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_currencyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_areaLabel"
+                    android:layout_margin="5dp"
+                    android:text="Currencies:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_currency"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_area"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_currencyLabel"-->
-<!--                    android:text="Currency"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_area"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_currencyLabel"
+                    android:text="Currency"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_codeLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_currencyLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="CurrencyCode:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_codeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_currencyLabel"
+                    android:layout_margin="5dp"
+                    android:text="CurrencyCode:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_code"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_currency"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_codeLabel"-->
-<!--                    android:text="CurrencyCode"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_currency"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_codeLabel"
+                    android:text="CurrencyCode"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_currencyNameLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_codeLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="CurrencyName:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_currencyNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_codeLabel"
+                    android:layout_margin="5dp"
+                    android:text="CurrencyName:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_currencyName"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_code"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_currencyNameLabel"-->
-<!--                    android:text="CurrencyName"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_currencyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_code"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_currencyNameLabel"
+                    android:text="CurrencyName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_symbolLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_currencyNameLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="CurrencySymbol:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_symbolLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_currencyNameLabel"
+                    android:layout_margin="5dp"
+                    android:text="CurrencySymbol:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_symbol"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_currencyName"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_symbolLabel"-->
-<!--                    android:text="Symbol"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_currencyName"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_symbolLabel"
+                    android:text="Symbol"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_languageLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_symbolLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Languages:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_languageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_symbolLabel"
+                    android:layout_margin="5dp"
+                    android:text="Languages:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_language"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_symbol"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_languageLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_symbol"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_languageLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_FLanguageLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_languageLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Language1:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_FLanguageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_languageLabel"
+                    android:layout_margin="5dp"
+                    android:text="Language1:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_FLanguage"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_language"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_FLanguageLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_FLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_language"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_FLanguageLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_SLanguageLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_FLanguageLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Language2:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_SLanguageLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_FLanguageLabel"
+                    android:layout_margin="5dp"
+                    android:text="Language2:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_SLanguage"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_FLanguage"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_SLanguageLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_SLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_FLanguage"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_SLanguageLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_LNameLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_SLanguageLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Name:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_LNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_SLanguageLabel"
+                    android:layout_margin="5dp"
+                    android:text="Name:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_LName"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_SLanguage"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_LNameLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_LName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_SLanguage"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_LNameLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_LNativeNameLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_LNameLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="NativeName:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_LNativeNameLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_LNameLabel"
+                    android:layout_margin="5dp"
+                    android:text="NativeName:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_LNativeName"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_LName"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_LNativeNameLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_LNativeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_LName"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_LNativeNameLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_timeZoneLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_LNativeNameLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="TimeZones:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_timeZoneLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_LNativeNameLabel"
+                    android:layout_margin="5dp"
+                    android:text="TimeZones:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_timeZone"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_LNativeName"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_timeZoneLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_timeZone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_LNativeName"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_timeZoneLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_timeLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_LNativeNameLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="Time:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_timeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_LNativeNameLabel"
+                    android:layout_margin="5dp"
+                    android:text="Time:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_time"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_timeZone"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_timeLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_timeZone"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_timeLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_codesLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_timeZoneLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="CallingCode:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_codesLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_timeZoneLabel"
+                    android:layout_margin="5dp"
+                    android:text="CallingCode:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_codes"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_timeZone"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_codesLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_codes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_timeZone"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_codesLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_numberLabel"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_codesLabel"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:text="code:"-->
-<!--                    android:textColor="@android:color/black"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_numberLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_codesLabel"
+                    android:layout_margin="5dp"
+                    android:text="code:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal" />
 
-<!--                <TextView-->
-<!--                    android:id="@+id/tv_number"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_below="@id/tv_codes"-->
-<!--                    android:layout_margin="5dp"-->
-<!--                    android:layout_toRightOf="@id/tv_numberLabel"-->
-<!--                    android:text="Area"-->
-<!--                    android:textColor="@color/colorPrimaryDark"-->
-<!--                    android:textStyle="normal" />-->
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_codes"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/tv_numberLabel"
+                    android:text="Area"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="normal" />
 
             </RelativeLayout>
 
