@@ -5,6 +5,10 @@ import android.os.Parcelable;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Country implements Parcelable {
 
     @SerializedName("name")
@@ -24,7 +28,37 @@ public class Country implements Parcelable {
     @SerializedName("subregion")
     private String subRegion;
 
-    public Country() {
+//    @SerializedName("currencies")
+//    private List<String> currency = new ArrayList<String>();
+//    @SerializedName("code")
+//    private String code;
+//    @SerializedName("name")
+//    private String Name;
+//    @SerializedName("symbol")
+//    private String symbol;
+//    @SerializedName("languages")
+//    private List<String> language = new ArrayList<String>();
+//    @SerializedName("iso639_1")
+//    private String firstLanguage;
+//    @SerializedName("iso639_2")
+//    private String secondLanguage;
+//    @SerializedName("name")
+//    private String languageName;
+//    @SerializedName("nativeName")
+//    private String languageNativeName;
+//    @SerializedName("timezones")
+//    private List<String> timeZones = new ArrayList<String>();
+//    @SerializedName("0")
+//    private String time;
+//    @SerializedName("area")
+//    private String area;
+//    @SerializedName("callingCodes")
+//    private List<String> codes = new ArrayList<String>();
+//    @SerializedName("0")
+//    private String number;
+
+    public Country () {
+
     }
 
     public Country(String name, String capital, String region, String imageUrl, String population, String numericCode, String nativeName, String subRegion) {
@@ -36,7 +70,24 @@ public class Country implements Parcelable {
         this.numericCode = numericCode;
         this.nativeName = nativeName;
         this.subRegion = subRegion;
+//        this.currency = currency;
     }
+
+
+    //        this.code = code;
+//        Name = name1;
+//        this.symbol = symbol;
+//        this.language = language;
+//        this.firstLanguage = firstLanguage;
+//        this.secondLanguage = secondLanguage;
+//        this.languageName = languageName;
+//        this.languageNativeName = languageNativeName;
+//        this.timeZones = timeZones;
+//        this.time = time;
+//        this.area = area;
+//        this.codes = codes;
+//        this.number = number;
+
 
     protected Country(Parcel in) {
         name = in.readString();
@@ -47,6 +98,20 @@ public class Country implements Parcelable {
         subRegion = in.readString();
         nativeName = in.readString();
         numericCode = in.readString();
+//        currency = Collections.singletonList(in.readString());
+//        code = in.readString();
+//        Name = in.readString();
+//        symbol = in.readString();
+//        language = Collections.singletonList(in.readString());
+//        firstLanguage = in.readString();
+//        secondLanguage = in.readString();
+//        languageName = in.readString();
+//        languageNativeName = in.readString();
+//        timeZones = Collections.singletonList(in.readString());
+//        time = in.readString();
+//        area = in.readString();
+//        codes = Collections.singletonList(in.readString());
+//        number = in.readString();
     }
 
     public static final Creator<Country> CREATOR = new Creator<Country>() {
@@ -64,6 +129,50 @@ public class Country implements Parcelable {
     public String getName() {
         return name;
     }
+
+//    public String getSymbol() {
+//        return symbol;
+//    }
+//
+//    public List<String> getLanguage() {
+//        return language;
+//    }
+//
+//    public String getFirstLanguage() {
+//        return firstLanguage;
+//    }
+//
+//    public String getSecondLanguage() {
+//        return secondLanguage;
+//    }
+//
+//    public String getLanguageName() {
+//        return languageName;
+//    }
+//
+//    public String getLanguageNativeName() {
+//        return languageNativeName;
+//    }
+//
+//    public List<String> getTimeZones() {
+//        return timeZones;
+//    }
+//
+//    public String getTime() {
+//        return time;
+//    }
+//
+//    public String getArea() {
+//        return area;
+//    }
+//
+//    public List<String> getCodes() {
+//        return codes;
+//    }
+//
+//    public String getNumber() {
+//        return number;
+//    }
 
     public String getCapital() {
         return capital;
@@ -93,6 +202,14 @@ public class Country implements Parcelable {
         return subRegion;
     }
 
+//    public List<String> getCurrency() {
+//        return currency;
+//    }
+//
+//    public String getCode() {
+//        return code;
+//    }
+
     @Override
     public String toString() {
         return "Country{" +
@@ -104,6 +221,20 @@ public class Country implements Parcelable {
                 ", numericCode='" + numericCode + '\'' +
                 ", nativeName='" + nativeName + '\'' +
                 ", subRegion='" + subRegion + '\'' +
+//                ", currency=" + currency +
+//                ", code='" + code + '\'' +
+//                ", Name='" + Name + '\'' +
+//                ", symbol='" + symbol + '\'' +
+//                ", language=" + language +
+//                ", firstLanguage='" + firstLanguage + '\'' +
+//                ", secondLanguage='" + secondLanguage + '\'' +
+//                ", languageName='" + languageName + '\'' +
+//                ", languageNativeName='" + languageNativeName + '\'' +
+//                ", timeZones=" + timeZones +
+//                ", time='" + time + '\'' +
+//                ", area='" + area + '\'' +
+//                ", codes=" + codes +
+//                ", number='" + number + '\'' +
                 '}';
     }
 
@@ -122,6 +253,20 @@ public class Country implements Parcelable {
         dest.writeString(subRegion);
         dest.writeString(nativeName);
         dest.writeString(numericCode);
+//        dest.writeString(String.valueOf(currency));
+//        dest.writeString(code);
+//        dest.writeString(symbol);
+//        dest.writeString(String.valueOf(language));
+//        dest.writeString(languageName);
+//        dest.writeString(languageNativeName);
+//        dest.writeString(firstLanguage);
+//        dest.writeString(secondLanguage);
+//        dest.writeString(time);
+//        dest.writeString(area);
+//        dest.writeString(String.valueOf(timeZones));
+//        dest.writeString(String.valueOf(codes));
+//        dest.writeString(number);
+//        dest.writeString(Name);
     }
 }
 

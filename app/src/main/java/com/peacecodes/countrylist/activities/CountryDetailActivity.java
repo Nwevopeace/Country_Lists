@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.PictureDrawable;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +20,8 @@ import java.text.DecimalFormat;
 
 public class CountryDetailActivity extends AppCompatActivity {
 
-    private TextView mName, mCapital, mNativeName, mRegion, mSubRegion, mNumericCode, mPopulation;
+    private TextView mName, mCapital, mNativeName, mRegion, mSubRegion, mNumericCode, mPopulation,
+    mCurrency, mCode, mCurrencyName, mSymbol, mLanguages, mFLanguage, mSLanguage, mLanguageName, mLNativeName, mTimeZone, mTime, mArea, mCodes, mNumber;
     private ImageView mFlag;
 
     @Override
@@ -35,6 +37,20 @@ public class CountryDetailActivity extends AppCompatActivity {
         mNumericCode = findViewById(R.id.numericCode);
         mPopulation = findViewById(R.id.tv_population);
         mFlag = findViewById(R.id.iv_flag);
+//        mCurrency = findViewById(R.id.tv_currency);
+//        mCode = findViewById(R.id.tv_code);
+//        mCurrencyName = findViewById(R.id.tv_currencyName);
+//        mSymbol = findViewById(R.id.tv_symbol);
+//        mLanguages = findViewById(R.id.tv_language);
+//        mFLanguage = findViewById(R.id.tv_FLanguage);
+//        mSLanguage = findViewById(R.id.tv_SLanguage);
+//        mLanguageName = findViewById(R.id.tv_LName);
+//        mLNativeName = findViewById(R.id.tv_LNativeName);
+//        mTimeZone = findViewById(R.id.tv_timeZone);
+//        mTime = findViewById(R.id.tv_time);
+//        mArea = findViewById(R.id.tv_area);
+//        mCodes = findViewById(R.id.tv_codes);
+//        mNumber = findViewById(R.id.tv_number);
 
         getCountryDetails();
 
@@ -61,6 +77,21 @@ public class CountryDetailActivity extends AppCompatActivity {
         mSubRegion.setText(countries.getSubRegion());
         mNumericCode.setText(countries.getNumericCode());
         mPopulation.setText(yourFormattedString);
+//        mCurrency.setText(currencies.getCurrency());
+//        mCode.setText(countries.getCode());
+//        mCurrencyName.setText(countries.getName());
+//        mSymbol.setText(countries.getSymbol());
+//        mLanguages.setText(countries.getLanguage());
+//        mFLanguage.setText(countries.getFirstLanguage());
+//        mSLanguage.setText(countries.getSecondLanguage());
+//        mLanguageName.setText(countries.getLanguageName());
+//        mLNativeName.setText(countries.getLanguageNativeName());
+//        mTimeZone.setText(countries.getTimeZones());
+//        mTime.setText(countries.getTime());
+//        mArea.setText(countries.getArea());
+//        mCodes.setText(countries.getCodes());
+//        mNumber.setText(countries.getNumber());
+
         showImage(countries.getImageUrl());
     }
     private void showImage(String url) {
@@ -75,6 +106,13 @@ public class CountryDetailActivity extends AppCompatActivity {
                     .apply(new RequestOptions()
                             .centerCrop())
                     .into(mFlag);
+        }
+    }
+
+    public void handleNavigation(View view) {
+        if (view.getId() == R.id.back_image) {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
         }
     }
 }

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Country List</string>
     <string name="filter_message">No Data Found</string>
+    <string name="back">Back Arrow</string>
 </resources>
