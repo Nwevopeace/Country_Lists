@@ -27,15 +27,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> implements Filterable {
-    private Context context;
-    private List<Country> countryList;
-    List<Country> currency;
-    List<Country> language;
-    List<Country> timeZone;
-    List<Country> callingCode;
+    private final Context context;
+    private final List<Country> countryList;
+
 
     //a copy of the list
-    private List<Country> countryListFull;
+    private final List<Country> countryListFull;
 
     public RecyclerAdapter(Context context, List<Country> countryList) {
         this.context = context;
@@ -95,7 +92,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         return countryFilter;
     }
 
-    private Filter countryFilter = new Filter() {
+    private final Filter countryFilter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
            List<Country> filteredList = new ArrayList<>();
@@ -149,17 +146,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         public void onClick(View view) {
             int position = getAdapterPosition();
             Country countrySelected = countryList.get(position);
-            Country countrySelectedCurrency = currency.get(position);
-            Country countrySelectedLanguage = language.get(position);
-            Country countrySelectedTimeZone = timeZone.get(position);
-            Country countrySelectedCallingCode = callingCode.get(position);
 
             Intent intent = new Intent(view.getContext(), CountryDetailActivity.class);
             intent.putExtra("CountrySelected", countrySelected);
-            intent.putExtra("CountrySelectedCurrency", countrySelectedCurrency);
-            intent.putExtra("CountrySelectedLanguage", countrySelectedLanguage);
-            intent.putExtra("CountrySelectedTimeZone", countrySelectedTimeZone);
-            intent.putExtra("CountrySelectedCallingCode", countrySelectedCallingCode);
             view.getContext().startActivity(intent);
         }
     }

@@ -21,7 +21,7 @@ import java.text.DecimalFormat;
 public class CountryDetailActivity extends AppCompatActivity {
 
     private TextView mName, mCapital, mNativeName, mRegion, mSubRegion, mNumericCode, mPopulation,
-    mCurrency, mCode, mCurrencyName, mSymbol, mLanguages, mFLanguage, mSLanguage, mLanguageName, mLNativeName, mTimeZone, mTime, mArea, mCodes, mNumber;
+            mCurrency, mCode, mCurrencyName, mSymbol, mLanguages, mFLanguage, mSLanguage, mLNativeName, mTimeZone, mArea, mCodes;
     private ImageView mFlag;
 
     @Override
@@ -44,17 +44,13 @@ public class CountryDetailActivity extends AppCompatActivity {
         mLanguages = findViewById(R.id.tv_language);
         mFLanguage = findViewById(R.id.tv_FLanguage);
         mSLanguage = findViewById(R.id.tv_SLanguage);
-        mLanguageName = findViewById(R.id.tv_LName);
         mLNativeName = findViewById(R.id.tv_LNativeName);
         mTimeZone = findViewById(R.id.tv_timeZone);
-        mTime = findViewById(R.id.tv_time);
         mArea = findViewById(R.id.tv_area);
         mCodes = findViewById(R.id.tv_codes);
-        mNumber = findViewById(R.id.tv_number);
 
         getCountryDetails();
-
-    }
+    }  
 
     private void getCountryDetails() {
         Intent intent = getIntent();
@@ -62,7 +58,6 @@ public class CountryDetailActivity extends AppCompatActivity {
         if (country == null) {
             country = new Country();
         }
-
         //for putting comma in-between the population digits
         String population = country.getPopulation();
         int populationInteger = Integer.parseInt(population);
@@ -70,6 +65,32 @@ public class CountryDetailActivity extends AppCompatActivity {
         String yourFormattedString = formatter.format(populationInteger);
 
         Country countries = country;
+        String languages = "";
+        String FirstLanguage = "";
+        String SecondLanguage = "";
+        String LanguageNativeName = "";
+        String timeZones = "";
+        String codes = "";
+        for (int i = 0; i < countries.getLanguages().size(); i++) {
+            languages = languages.concat(countries.getLanguages().get(i).getLanguageName() + " ");
+        }
+        for (int i = 0; i < countries.getLanguages().size(); i++) {
+            FirstLanguage = FirstLanguage.concat(countries.getLanguages().get(i).getFirstLanguage() + " ");
+        }
+        for (int i = 0; i < countries.getLanguages().size(); i++) {
+            SecondLanguage = SecondLanguage.concat(countries.getLanguages().get(i).getSecondLanguage() + " ");
+        }
+        for (int i = 0; i < countries.getLanguages().size(); i++) {
+            LanguageNativeName = LanguageNativeName.concat(countries.getLanguages().get(i).getLanguageNativeName() + " ");
+        }
+        for (int i = 0; i < countries.getTimeZones().size(); i++) {
+            timeZones = timeZones.concat(countries.getLanguages().get(i) + " ");
+        }
+        for (int i = 0; i < countries.getCodes().size(); i++) {
+            codes = codes.concat(countries.getLanguages().get(i) + " ");
+        }
+
+
         mName.setText(countries.getName());
         mCapital.setText(countries.getCapital());
         mNativeName.setText(countries.getNativeName());
@@ -77,20 +98,17 @@ public class CountryDetailActivity extends AppCompatActivity {
         mSubRegion.setText(countries.getSubRegion());
         mNumericCode.setText(countries.getNumericCode());
         mPopulation.setText(yourFormattedString);
-        mCurrency.setText((CharSequence) countries.getCurrency());
-        mCode.setText(countries.getCode());
+        mCurrency.setText(countries.getCurrency().get(0).getName());
+        mCode.setText(countries.getCurrency().get(0).getCode());
+        mSymbol.setText(countries.getCurrency().get(0).getSymbol());
         mCurrencyName.setText(countries.getName());
-        mSymbol.setText(countries.getSymbol());
-        mLanguages.setText((CharSequence) countries.getLanguage());
-        mFLanguage.setText(countries.getFirstLanguage());
-        mSLanguage.setText(countries.getSecondLanguage());
-        mLanguageName.setText(countries.getLanguageName());
-        mLNativeName.setText(countries.getLanguageNativeName());
-        mTimeZone.setText((CharSequence) countries.getTimeZones());
-        mTime.setText(countries.getTime());
+        mTimeZone.setText(timeZones);
+        mLanguages.setText(languages);
+        mFLanguage.setText(FirstLanguage);
+        mSLanguage.setText(SecondLanguage);
+        mLNativeName.setText(LanguageNativeName);
         mArea.setText(countries.getArea());
-        mCodes.setText((CharSequence) countries.getCodes());
-        mNumber.setText(countries.getNumber());
+        mCodes.setText(codes);
 
         showImage(countries.getImageUrl());
     }

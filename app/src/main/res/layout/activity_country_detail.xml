@@ -354,31 +354,10 @@
                     android:textStyle="normal" />
 
                 <TextView
-                    android:id="@+id/tv_LNameLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_SLanguageLabel"
-                    android:layout_margin="5dp"
-                    android:text="Name:"
-                    android:textColor="@android:color/black"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/tv_LName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_SLanguage"
-                    android:layout_margin="5dp"
-                    android:layout_toRightOf="@id/tv_LNameLabel"
-                    android:text="Area"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textStyle="normal" />
-
-                <TextView
                     android:id="@+id/tv_LNativeNameLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_LNameLabel"
+                    android:layout_below="@id/tv_SLanguageLabel"
                     android:layout_margin="5dp"
                     android:text="NativeName:"
                     android:textColor="@android:color/black"
@@ -388,7 +367,7 @@
                     android:id="@+id/tv_LNativeName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_LName"
+                    android:layout_below="@id/tv_SLanguage"
                     android:layout_margin="5dp"
                     android:layout_toRightOf="@id/tv_LNativeNameLabel"
                     android:text="Area"
@@ -417,27 +396,6 @@
                     android:textStyle="normal" />
 
                 <TextView
-                    android:id="@+id/tv_timeLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_LNativeNameLabel"
-                    android:layout_margin="5dp"
-                    android:text="Time:"
-                    android:textColor="@android:color/black"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/tv_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_timeZone"
-                    android:layout_margin="5dp"
-                    android:layout_toRightOf="@id/tv_timeLabel"
-                    android:text="Area"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textStyle="normal" />
-
-                <TextView
                     android:id="@+id/tv_codesLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -454,27 +412,6 @@
                     android:layout_below="@id/tv_timeZone"
                     android:layout_margin="5dp"
                     android:layout_toRightOf="@id/tv_codesLabel"
-                    android:text="Area"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/tv_numberLabel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_codesLabel"
-                    android:layout_margin="5dp"
-                    android:text="code:"
-                    android:textColor="@android:color/black"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:id="@+id/tv_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_codes"
-                    android:layout_margin="5dp"
-                    android:layout_toRightOf="@id/tv_numberLabel"
                     android:text="Area"
                     android:textColor="@color/colorPrimaryDark"
                     android:textStyle="normal" />

@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         countryList = new ArrayList<>();
 
-
         ApiInterface apiInterface = ApiClient.getClient(MainActivity.this).create(ApiInterface.class);
         Call<List<Country>> call = apiInterface.getCountries();
         call.enqueue(new Callback<List<Country>>() {
