@@ -84,10 +84,10 @@ public class CountryDetailActivity extends AppCompatActivity {
             LanguageNativeName = LanguageNativeName.concat(countries.getLanguages().get(i).getLanguageNativeName() + " ");
         }
         for (int i = 0; i < countries.getTimeZones().size(); i++) {
-            timeZones = timeZones.concat(countries.getLanguages().get(i) + " ");
+            timeZones = timeZones.concat(countries.getTimeZones().get(i) + " ");
         }
         for (int i = 0; i < countries.getCodes().size(); i++) {
-            codes = codes.concat(countries.getLanguages().get(i) + " ");
+            codes = codes.concat(countries.getCodes().get(i) + " ");
         }
 
 

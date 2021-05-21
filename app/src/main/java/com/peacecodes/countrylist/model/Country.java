@@ -171,11 +171,11 @@ public class Country implements Parcelable {
         dest.writeString(subRegion);
         dest.writeString(nativeName);
         dest.writeString(numericCode);
+        dest.writeString(area);
         dest.writeList(currency);
         dest.writeList(languages);
         dest.writeList(timeZones);
         dest.writeList(codes);
-        dest.writeString(area);
     }
 }
 

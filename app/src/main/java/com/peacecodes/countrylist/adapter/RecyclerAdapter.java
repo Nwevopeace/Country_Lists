@@ -1,4 +1,4 @@
-package com.peacecodes.countrylist.adapter;
+ package com.peacecodes.countrylist.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -29,7 +29,6 @@ import java.util.List;
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> implements Filterable {
     private final Context context;
     private final List<Country> countryList;
-
 
     //a copy of the list
     private final List<Country> countryListFull;
@@ -143,13 +142,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         }
 
         @Override
-        public void onClick(View view) {
+        public void onClick(View MainActivity) {
             int position = getAdapterPosition();
             Country countrySelected = countryList.get(position);
 
-            Intent intent = new Intent(view.getContext(), CountryDetailActivity.class);
+            Intent intent = new Intent(MainActivity.getContext(), CountryDetailActivity.class);
             intent.putExtra("CountrySelected", countrySelected);
-            view.getContext().startActivity(intent);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            MainActivity.getContext().startActivity(intent);
+
         }
     }
 }
